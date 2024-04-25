@@ -1,0 +1,20 @@
+.container{
+    height: 50px;
+    background: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+.logo{
+    font-size: 25px;
+    
+}
+.list_item{
+    display: inline;
+    margin-right: 30px;
+    font-size: 14px;
+    color: lightgray;
+    cursor: pointer;
+}
