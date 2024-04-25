@@ -4,6 +4,7 @@ export default function Home() {
   
       <div className="home_container">
         <Intro />
+        <Intro />
       </div>
    
   );

@@ -1,8 +1,11 @@
 import React from 'react'
+import Update from  '../../component/Update'
 
 function page() {
   return (
-    <h1>Blog page</h1>
+   <div className='blog_container'>
+    <Update />
+   </div>
   )
 }
 

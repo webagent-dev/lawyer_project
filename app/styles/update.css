@@ -1,0 +1,51 @@
+ /* ===========================================
+                                                            SLIDER SECTION
+            ==================================================== */
+            .latest{
+                background: lightskyblue;
+                padding: 0.5rem 0;
+                width: 100%;
+                /* font-family: 'Roboto', sans-serif; */
+                overflow: hidden;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            .main-latest{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .update{
+                background: black;
+                border: none;
+                outline: none;
+                font-size: 0.6rem;
+                color: white;
+                text-transform: uppercase;
+                padding: 0.3rem 0.7rem;
+                border-radius: 5px;
+                z-index: 1;
+                margin-left: 2px;
+            }
+            .move{
+                position: relative;
+                font-size:  .6rem;
+                font-weight: 700;
+                color: white;
+                text-transform: capitalize;
+                transition: all 1s linear;
+                animation-name: move;
+                animation-delay: 2s;
+                animation-fill-mode: forwards;
+                animation-duration: 15s;
+                animation-iteration-count: infinite;
+            }
+
+            @keyframes move{
+                from{
+                  right: 2000px; 
+               }
+                to{
+                  right: -600px;
+                  }
+              }
