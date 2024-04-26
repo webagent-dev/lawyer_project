@@ -15,8 +15,6 @@ const Intro = () => {
         <div className="intro_card">
             <Image
             src='/img/lawyer.png' 
-            // width='100%'
-            // height='100%'
             layout='fill'
             alt=''
             objectFit='cover'
