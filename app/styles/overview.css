@@ -1,5 +1,7 @@
 .content{
-    width: 100%;
+    width: 100%; 
+    height: 80vh;
+    /* display: none; */
     /* font-family: var(--font); */
 }
 .main-content{
@@ -9,21 +11,24 @@
 }
 .grid-content{
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
-    gap: .5rem;
+    gap: 1rem;
 }
-.content-1{
+
+ .content-1{
     position: relative;
-}
+    width: 600px;
+    height: 450px;
+} 
+
 .content-1-img .image{
     display: block;
-    width: 500px;
-    height: 300px;
     max-width: 100%;
     object-fit:  center;
 }
+
 .content-1 p{
     position: absolute;
     max-width: 350px;
@@ -33,31 +38,40 @@
     font-size: 0.8rem;
     padding: 0.3rem 0.5rem;
 }
+
 .content-2{
-    position: relative;
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+} 
+.img-1{
+    /*  position: relative; */
+    width: 500px;
+    height: 150px;
+    /* flex: 1; */
+     background: gray;
+     position: relative;
+     border: 2px solid grey;
+      border-radius: 1px;
 }
-.sub-content-1 .img-1,
-.sub-content-2 .img-2,
-.sub-content-3 .img-3{ 
-    /* margin: 0 auto; */
-    display: block;
-    width: 300px;
-    max-width: 100%
+
+.sub-content-1{ 
+  
+display: flex;
+ gap: 1rem;
 }
-.sub-content-1 h1,
-.sub-content-2 h1,
-.sub-content-3 h1{
+
+.sub-content-1 h1{
     font-size: 1rem;
     text-transform: capitalize;
     font-weight: 700;
     text-align: center;
 }
-.sub-content-1 p,
-.sub-content-2 p,
-.sub-content-3 p{
+.sub-content-1 p{
     font-size: 0.8rem;
     text-transform: capitalize;
     font-weight: 700;
     padding: 0.5rem 0;
     text-align: center;
-}
+} 
